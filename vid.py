@@ -7,7 +7,7 @@ import subprocess
 
 ########### extract audio from video
 # video original mp4
-input_video = "removenoise.mp4"   
+input_video = "demovideo.mp4"   
 
 videoclip = VideoFileClip(input_video )
 videoclip.audio.write_audiofile('audio.wav',fps=16000,bitrate='96k',nbytes=2,verbose=False)
